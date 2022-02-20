@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:active {
+            color: blue;
+        }
+        .especial::before {
+            content: ' ☛ ';
+        }
+        .especial::after {
+            content: ' ☚';
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=r4LGe12tNR8" target="_blank" class="especial" rel="external">Cry Baby - The Neighbourhood</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vnLAa6_hB9A" target="_blank" rel="external">Daddy Issues - The Neighbourhood</a></li>
+        <li><a href="https://www.youtube.com/watch?v=DujKJ1OaLQE" target="_target" rel="external">The Beach - The Neighbourhood</a></li>
+    </ul>
+</body>
+</html>

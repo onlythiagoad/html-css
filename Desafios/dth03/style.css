@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*{
+    font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+.div01 {
+    width: 600px;
+    height: 350px;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+}
+iframe{
+    padding: 15px;
+}

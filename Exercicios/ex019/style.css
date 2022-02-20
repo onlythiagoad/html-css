@@ -1,0 +1,17 @@
+body {
+    background-image: linear-gradient(to top, rgb(20, 20, 204), rgb(116, 12, 116));
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p {
+    text-align: justify;
+}
+h1#principal {
+    text-align: center;
+}
+.primeiro {
+    font-style: italic;
+}
+.segundo {
+    color: white;
+}
