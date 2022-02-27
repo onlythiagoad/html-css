@@ -8,41 +8,96 @@
     <style>
         table {
             border-collapse: collapse;
+            position: relative;
         }
         td,th {
             width: 500px;
             border: 1px solid black;
             padding: 5px;
         }
-        thead {
+        thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            background-color: gray;
+            top: 0;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: lightslategrey;
+        }
+        .num {
+            text-align: right;
         }
     </style>
 </head>
 <body>
     <h1>Uso das Tabelas Grandes</h1>
     <table>
+        <caption>População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>
+                <th scope="col">
                     Estado
                 </th>
-                <th>População</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45 32 099</td>
+                <td class="num">45 32 099</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">58 32 091</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">32 43 800</td>
+            </tr>
+            <tr>
+                <td>Fortaleza</td>
+                <td class="num">30 54 877</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">28 43 003</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">28 12 12</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">25 32 12</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">24 65 344</td>
+            </tr>
+            <tr>
+                <td>Tubarão</td>
+                <td class="num">23 12 43</td>
+            </tr>
+            <tr>
+                <td>Curitiba</td>
+                <td class="num"> 23 21 12</td>
+            </tr>
+            <tr>
+                <td>Moçambique</td>
+                <td class="num">23 12 12</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>00000</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam magnam quas fuga libero, velit rerum voluptatem placeat facilis dolorem optio voluptatum, impedit ipsa explicabo quaerat. Natus quis cupiditate dolor cum dignissimos! Et perferendis, beatae dignissimos doloribus quaerat facere dolor corporis quibusdam eaque id accusantium assumenda modi qui. Molestiae ipsum, eaque neque omnis deserunt voluptates culpa ipsa. Ipsum voluptas illo pariatur perferendis accusantium amet doloribus minus, assumenda necessitatibus nostrum, harum delectus esse cum cupiditate explicabo exercitationem. Impedit magni, ipsa ipsam animi quisquam dolorem officiis natus inventore voluptatum vel unde quo sunt incidunt, molestiae repudiandae, delectus libero pariatur! Reiciendis doloremque impedit dolorum odit laudantium ex praesentium iure magni, aliquam eum velit voluptates quam nostrum perspiciatis commodi cum modi sunt ipsam in ea qui. Esse eveniet laudantium adipisci, debitis nam ea rerum officia atque. Deleniti sequi reprehenderit repellat ipsam, amet in distinctio tempora perferendis quam, nam sit eveniet assumenda velit? Eveniet debitis itaque, esse, nemo minus illo molestias voluptates maxime illum culpa, in aut aspernatur. Veritatis hic illo obcaecati nisi sunt id repudiandae accusamus dolor molestiae aperiam nihil, odit blanditiis mollitia dicta qui numquam iste fuga, omnis rerum. Eum eos quos facilis nobis expedita illo delectus cum quod! Delectus nisi, asperiores pariatur laudantium quibusdam fuga recusandae nihil deserunt ipsum ipsam officiis exercitationem similique sunt doloribus quis inventore! Quidem voluptas esse voluptatem corrupti mollitia perferendis aliquam, illo corporis nemo porro numquam accusantium! Sit ullam exercitationem sapiente perferendis explicabo beatae quod quo! Maiores, ratione repellat! Veniam, omnis assumenda tempore ullam nihil aut, magnam quam iusto sed, ratione quo saepe. Fuga fugit voluptatem tenetur omnis! Alias ea autem, assumenda quia molestiae magni omnis consequatur velit, perspiciatis non error quasi aspernatur natus tempora aperiam a minus est officiis dolore at, eveniet fugiat. Cum commodi dolorem fuga et suscipit possimus laudantium excepturi error harum voluptate, cupiditate pariatur ut odit. Fuga ullam, sequi quasi adipisci, inventore earum sunt magnam culpa beatae voluptates mlit. Mollitia quisquam nesciunt ut libero saepe qui cupiditate ratione aspernatur beatae minus, dignissimos odio est doloremque autem aliquam ab laborum? Aspernatur ducimus perferendis beatae odit ex, quo cum ab officiis accusamus sed velit voluptatem ea odio necessitatibus harum eligendi dicta ipsam unde inventore saepe. Cupiditate beatae magni illum, consectetur aperiam necessitatibus, culpa numquam repellendus quibusdam error est vitae ipsum! Iste, similique dolore sunt, corporis omnis rerum vero odit tenetur porro fuga perferendis accusantium unde optio inventore aliquid nam aperiam modi nulla praesentium! Nulla, ducimus. Vitae deserunt, facere doloribus architecto voluptatum, aut eveniet numquam ratione rerum quibusdam eius facilis dolorem sapiente, porro nisi sint quod nemo! Velit voluptatibus voluptatem numquam dolorem. Praesentium natus vero magni placeat accusamus explicabo amet labore magnam molestias pariatur nihil consectetur quia vitae temporibus, eaque reprehenderit aliquam qui neque atque. Voluptatum doloremque eaque vitae sequi. Harum odit voluptatem sunt inventore, rerum facilis voluptates blanditiis non quam suscipit corrupti ab maiores incidunt magnam, voluptas soluta perferendis molestiae quisquam, voluptatibus accusamus tempore aperiam? Molestiae porro quasi illo quam nesciunt possimus aliquid nobis temporibus aspernatur, fugit necessitatibus, omnis assumenda repellat ipsum. Accusantium natus, modi quisquam quibusdam et consectetur eaque quia voluptas sit, nulla voluptate, eligendi laboriosam dolor sunt quas officia quam veritatis sed. Dignissimos officiis, tempore rerum modi odio laborum amet atque quaerat accusamus voluptatibus rem tempora dolorem, voluptate nihil reiciendis eius temporibus nisi suscipit quo. Magnam voluptate velit modi dolor iure a suscipit assumenda non. Omnis, soluta. Quis, ullam. Excepturi inventore cupiditate delectus facilis ea reprehenderit natus quibusdam. Incidunt sint, laboriosam natus fugit dolorem non ipsam inventore quasi, eos facilis doloremque numquam exercitationem nostrum nisi ipsa quia autem illum reprehenderit dignissimos nemo voluptas. Autem totam minus rerum hic adipisci magni, fuga, commodi sint voluptatem nesciunt inventore ipsa ducimus ullam ea laudantium? Dicta, quod? Accusamus doloribus quaerat sunt alias. Recusandae, voluptatum. Ut doloremque, corrupti quod sequi exercitationem laudantium vero accusamus, quia similique ipsa sunt vitae autem adipisci sit. Error accusantium ea provident animi! Repudiandae soluta, eius culpa repellendus ullam dolorem sunt tenetur natus cupiditate quam incidunt voluptates quisquam voluptas ab voluptate vitae! Excepturi autem officia soluta ipsum magnam quasi maxime commodi aspernatur tempora debitis sapiente fuga, dolorem culpa dicta asperiores reiciendis necessitatibus ea? Molestias quisquam ratione placeat impedit et distinctio quas commodi sunt reiciendis? Incidunt, temporibus in. Dolorum magnam numquam quasi.</p>
 </body>
 </html>
