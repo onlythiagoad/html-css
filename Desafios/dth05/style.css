@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --fonte-principal:'Rubik', sans-serif;
+    --fonte-corpo:'Rubik', sans-serif;
+}
+body {
+    background-image: linear-gradient(to top, gray, black);
+    font-family: var(--fonte-corpo);
+    background-attachment: fixed;
+}
+header {
+    background-color: black;
+    color: white;
+    font-family: var(--fonte-principal);
+    min-height: 100px;
+    text-align: center;
+    padding: 40px
+}
+header > p {
+    text-align: center;
+}
+main {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.226);
+    position: relative;
+    margin-left: 30px;
+    background: white;
+    margin-top: 10px;
+    max-width: 800px;
+    min-width: 300px;
+}
+main > h2 {
+    text-indent: 3px;
+    font-family: var(--fonte-principal);
+    padding: 10px;
+}
+main > h3, h4 {
+    padding: 10px;
+    font-family: var(--fonte-principal);
+}
+img {
+    padding: 10px;
+}
+p {
+    padding: 5px;
+    text-indent: 8px;
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+    background-color: rgba(128, 128, 128, 0.342);
+}
+a:hover {
+    text-decoration: underline;
+}
+.video01 {
+    position: relative;
+    padding-bottom: 50%;
+}
+.video01 > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+.sint01 {
+    max-height: 300px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
+
+}
+.sint01 > h3 {
+    background-color: rgba(128, 128, 128, 0.397);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+}
+ul {
+    list-style-position: inside;
+    columns: 2;
+}
+@media screen and (max-width:600px) {
+    header {
+        padding: 25px;
+    }
+    
+    h2, h3, h4 {
+        font-size: 1.1em;
+    }
+    main {
+        margin: auto;
+    }
+}
