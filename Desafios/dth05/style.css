@@ -44,6 +44,9 @@ nav > a {
 nav > a:hover {
     background-color: rgba(255, 255, 255, 0.144);
 }
+nav > a:visited {
+    color: white;
+}
 main {
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.226);
     position: relative;
@@ -114,17 +117,20 @@ li {
     padding: 5px;
 }
 h3#tit {
-    margin-top: 10px
+    margin-top: 25px
 }
 @media screen and (max-width:600px) {
     header {
         padding: 25px;
     }
-    
-    h2, h3, h4 {
-        font-size: 1.1em;
-    }
     main {
         margin: auto;
     }
+    h2, h3, h4 {
+        font-size: 1.1em;
+    }
+    h3#tit {
+        margin-top: 25px;
+    }
+    
 }
