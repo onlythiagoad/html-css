@@ -141,6 +141,8 @@ h3#tit {
 }
 footer {
     background-color: black;
+}
+footer > p {
     color: white;
     text-align: center;
     padding: 5px;
@@ -175,6 +177,9 @@ footer {
     }
     li {
         font-size: 0.8em;
+    }
+    footer > p {
+        font-size: .7em;
     }
     
 }
