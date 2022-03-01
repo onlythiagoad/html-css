@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -10,9 +11,10 @@
 :root {
     --fonte-principal:'Rubik', sans-serif;
     --fonte-corpo:'Rubik', sans-serif;
+    --fonte-secundario:'Oswald', sans-serif;
 }
 body {
-    background-image: linear-gradient(to top, gray, black);
+    background-color: white;
     font-family: var(--fonte-corpo);
     background-attachment: fixed;
 }
@@ -27,6 +29,21 @@ header {
 header > p {
     text-align: center;
 }
+nav {
+    background-color: black;
+    color: white;
+}
+nav > a {
+    border-radius: 8px 8px 0px 0px;
+    background-color: black;
+    color: white;
+    padding: 10px 10px 0px 10px;
+    transition-duration: 0.5s;
+    font-weight: bold;
+}
+nav > a:hover {
+    background-color: rgba(255, 255, 255, 0.144);
+}
 main {
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.226);
     position: relative;
@@ -36,20 +53,26 @@ main {
     max-width: 800px;
     min-width: 300px;
 }
-main > h2 {
+main > h2, h3 {
     text-indent: 3px;
-    font-family: var(--fonte-principal);
+    font-family: var(--fonte-corpo);
     padding: 10px;
+    background-image: linear-gradient(to right, rgba(128, 128, 128, 0.493), transparent);
 }
 main > h3, h4 {
     padding: 10px;
-    font-family: var(--fonte-principal);
+    font-family: var(--fonte-secundario);
+}
+h2, h3 , h4 {
+    font-family: var(--fonte-secundario);
+    font-weight: 700px;
 }
 img {
     padding: 10px;
+    margin-left: 15%;
 }
 p {
-    padding: 5px;
+    padding: 9px;
     text-indent: 8px;
     text-align: justify;
 }
@@ -86,6 +109,12 @@ a:hover {
 ul {
     list-style-position: inside;
     columns: 2;
+}
+li {
+    padding: 5px;
+}
+h3#tit {
+    margin-top: 10px
 }
 @media screen and (max-width:600px) {
     header {
