@@ -68,6 +68,7 @@ main > h3 {
     font-family: var(--fonte-corpo);
     padding: 10px;
     background-image: linear-gradient(to right, rgba(128, 128, 128, 0.493), transparent);
+    border-radius: 7px;
 }
 main > h3, h4 {
     padding: 10px;
@@ -76,6 +77,11 @@ main > h3, h4 {
 h2, h3 , h4 {
     font-family: var(--fonte-secundario);
     font-weight: 700px;
+}
+h2#ansiety {
+    border-radius: 7px;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgba(95, 95, 95, 0.589), transparent);
 }
 img {
     padding: 10px;

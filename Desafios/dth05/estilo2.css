@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --fonte-principal:'Rubik', sans-serif;
+    --fonte-corpo:'Rubik', sans-serif;
+    --fonte-secundario:'Oswald', sans-serif;
+}
+body {
+    font-family: var(--fonte-corpo);
+    background-color: rgb(255, 255, 255);
+}
+main {
+    margin: auto;
+    max-width: 800px;
+    min-width: 300px;
+    height: 600px;
+    background-color: white;
+}
+header {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.295);
+    min-height: 150px;
+    background-color: black;
+    color: white;
+}
+h1, h2 {
+    color: white;
+    padding: 10px;
+    font-weight: normal;
+    font-size: 1;
+    text-align: center;
+}
+h2 {
+    background-color: rgb(56, 56, 56);
+}
+section {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.295);
+    border-radius: 0px 0px 7px 7px;
+    color: black;
+    height: 250px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: black;
+}
+ul {
+    list-style-position: inside;
+}
+li {
+    list-style-type: '\1F517\00A0';
+    padding: 5px;
+}
+main > p {
+    padding: 10px;
+    font-weight: bold;
+}
+a#linkhome::before {
+    content: '\1F519\00A0';
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-style: italic;
+}
+@media screen and (max-width:500px){
+    header {
+        font-size: 2.1vh;
+        min-height: 80px;
+        padding: 10px;
+
+    }
+    h2 {
+        font-size: 1em
+    }
+    li {
+        font-size: .9em;
+    }
+    
+}
