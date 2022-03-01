@@ -161,6 +161,12 @@ footer {
     main {
         margin: auto;
     }
+    main > p {
+        font-size: .9em;
+    }
+    p#pf {
+        font-size: .9em;
+    }
     h2, h3, h4 {
         font-size: 0.9em;
     }
