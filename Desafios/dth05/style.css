@@ -98,7 +98,8 @@ a:hover {
     height: 90%;
 }
 .sint01 {
-    max-height: 300px;
+    margin: 10px 10px 10px 10px;
+    max-height: 500px;
     padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.233);
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.445);
