@@ -120,15 +120,30 @@ li {
 h3#tit {
     margin-top: 25px
 }
-@media screen and (max-width:480px) {
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-style: italic;
+}
+@media screen and (max-width:500px) {
     header {
-        padding: 25px;
+        min-height: 80px;
+        padding: 10px;
+
+    }
+    header > h1 {
+        font-size: 3.1vh;
+    }
+    header > p {
+        font-size: 0.8em;
     }
     main {
         margin: auto;
     }
     h2, h3, h4 {
-        font-size: 1.1em;
+        font-size: 0.9em;
     }
     h3#tit {
         margin-top: 25px;
