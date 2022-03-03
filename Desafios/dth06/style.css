@@ -38,22 +38,26 @@ header > h1 {
     "sidenave item item"
     "sidenave item item";
     grid-gap: 20px;
+
+    
 }
 img {
+    width: 100%;
     border-radius: 20px;
 }
 .sidenave {
-    width: 300px;
+    max-width: 300px;
+    min-width: 200px;
     height: 700px;
     background-color: #333;
     border-radius: 20px;
-
     grid-area: "sidenave";
     grid-row: sidenave;
 }
 .item {
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.322);
-    width: 300px;
+    max-width: 300px;
+    min-width: 200px;
     height: 300px;
     background-color: #333;
     border-radius: 20px;
@@ -78,4 +82,79 @@ li {
     padding: 20px;
     color: white;
     list-style-position: inside;
+    list-style-type: '\1F517\00A0\00A0';
+}
+li.home {
+    list-style-type: '\1F3E0\00A0\00A0';
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+li:hover {
+    background-color: rgba(255, 255, 255, 0.178);
+    transition: 0.7s;
+    border-radius: 10px;
+}
+a:hover {
+    text-decoration: underline;
+    
+}
+a:visited {
+    color: white;
+}
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer > p {
+    font-style: italic;
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        grid-template-areas: 
+        "sidenave item"
+        "sidenave item"
+        "sidenave item"
+        "sidenave item"
+        "sidenave item"
+        "sidenave item";
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header > h1 {
+        font-size: 5vh;
+    }
+    h2 {
+        font-size: 3.3vh;
+    }
+    li {
+        font-size: 2.2vh;
+    }
+    .sidenave {
+        height: 300px;
+    }
+    .container {
+        grid-template-areas: 
+        "sidenave"
+        "item"
+        "item"
+        "item"
+        "item"
+        "item";
+        grid-gap: 20px;
+        justify-content: center;
+    }
+    footer {
+        padding: 5px;
+    }
+    footer > p {
+        font-size: .7em;
+    }
 }
