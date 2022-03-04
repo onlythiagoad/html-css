@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: blue;
+}
+
+header {
+    background-color: lightblue;
+    ;
+    text-align: center;
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    max-width: 2000px;
+    height: 800px;
+
+    display: grid;
+    grid-template-areas: 
+    "item item aside"
+    "item item aside";
+}
+.item {
+    background-color: rgb(97, 96, 96);
+    max-width: 300px;
+    height: 300px;
+
+    grid-area: "item";
+}
+.aside {
+    width: 300px;
+    background-color: lightblue;
+
+
+}
