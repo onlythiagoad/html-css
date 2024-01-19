@@ -11,6 +11,9 @@
     margin: 0;
     padding: 0;
 }
+html, body{
+    min-height: 100vh;
+}
 header {
     background-color: black;
     color: white;
@@ -25,8 +28,15 @@ header > h1{
 header > p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
 main  p{
-    text-indent: 30px;
+    padding-left: 30px;
     text-align: justify;
     font-family: var(--font-normal);
     font-size: 4vh;
@@ -58,9 +68,26 @@ main  p{
     padding-top: 80px;
 }
 .p5{
+    padding-top: 80px;
+    height: 500px;
     background-image: url(imagens/background002.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.419);
+}
+.p6{
+    padding-top: 80px;
+}
+.p7{
+    padding-top: 80px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--font-normal);
+}
+span{
+    text-decoration: underline;
 }
