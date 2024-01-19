@@ -18,15 +18,17 @@ header {
     background-color: black;
     color: white;
     text-align: center;
-    height: 200px;
+    max-height: 300px;
 }
 header > h1{
     padding-top: 50px;
     font-family: var(--font-destaque);
-    font-size: 10vh;
+    font-size: 10vw;
 }
 header > p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 20px;
+    font-size: 3vh;
 }
 a{
     text-decoration: none;
@@ -41,7 +43,9 @@ main  p{
     font-family: var(--font-normal);
     font-size: 4vh;
 }
-
+section {
+    font-size: 5vw;
+}
 .p1{
     padding-top: 80px;
     height: 500px;
@@ -49,20 +53,35 @@ main  p{
 .p2{
    background-image: url(imagens/background001.jpg);
    background-repeat: no-repeat;
+   background-position: right center;
    background-size: cover;
    background-attachment: fixed;
    height: 500px;
-   box-shadow: inset 8px 8px 8px black;
+   padding-top: 80px;
+   box-shadow: inset 6px 13px 0px rgba(0, 0, 0, 0.247);
 }
-.txt1 {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.037);
+.p2 p {
+    
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 400px;
     color: white;
-    border: 1px solid rgba(0, 0, 0, 0.300);
-    width: 380px;
-    margin-top: 70px;
-    left: 25px;
+    margin-left: 10px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.121);
+
+
+    /*margin-top: 10vh;
+        background-color: rgba(0, 0, 0, 0.284);
+        border-radius: 10px;   >>>  "ISSO FOI OQ ERREI"  <<<
+        color: white;
+        width: 400px;
+        margin-top: 70px;
+        left: 25px;
+    */
+
 }
+
+    
 .p4{
     height: 500px;
     padding-top: 80px;
@@ -75,6 +94,14 @@ main  p{
     background-repeat: no-repeat;
     background-attachment: fixed;
     box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.419);
+}
+.p5 p {
+    background-color: rgba(0, 0, 0, 0.514);
+    color:white;
+    width: 400px;
+    margin-left: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.252);
 }
 .p6{
     padding-top: 80px;
