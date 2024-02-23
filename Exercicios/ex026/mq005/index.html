@@ -6,8 +6,9 @@
     <title>Media Query</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>g1</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -26,10 +27,19 @@
             <h2>Nvidia: como a inteligência artificial criou o novo "fenômeno" da bolsa americana</h2>
             <p>Empresa teve alta de 769% no lucro em relação ao quarto trimestre de 2022. Companhia é uma fornecedora central de insumos para a expansão da IA, que promete ser a última grande revolução tecnológica — se os analistas estiverem corretos, é claro.</p>
             <p>A fabricante de chips e semicondutores Nvidia deu uma nova mostra do porquê virou a queridinha da bolsa americana. O lucro do quarto trimestre de 2023 foi de US$ 12,285 bilhões (ou mais de R$ 60 bilhões), em mais um resultado consistente divulgado na noite de quarta-feira (21) e que impressionou os analistas.</p>
-            <p>Os números representam uma <strong>alta de 769% no lucro da companhia em relação ao quarto trimestre de 2022.</strong> As ações, antes da abertura de mercado, subiam mais de 13% nesta quinta-feira (22).</p>
+            <p>Os números representam uma <strong>alta de 769% no lucro da companhia em relação ao quarto trimestre de 2022.</strong> As ações, antes da abertura de mercado, subiam mais de 13% nesta quinta-feira (22).</p> 
         </article>
     </main>
     <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                item.style.display = 'block'
+            } else {
+                item.style.display = 'none'
+            }
+        }
+
+
         function clickMenu(){
             if (item.style.display == 'block') {
                 item.style.display = 'none'
