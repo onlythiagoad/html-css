@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .item{
+            display: grid;
+            margin: 5px;
+            background: tomato;
+            text-align: center;
+
+        }
+        .grid{
+            max-width: 400px;
+            margin: auto;
+            border: 1px solid black;
+        }
+        .container{
+            grid-template-columns:150px 150px;
+            display: grid;
+            border: 1px solid black;
+            max-width: 400px;
+            margin: auto;
+            
+        }
+        .cxs1{
+            text-align: center;
+            margin: 5px;
+            background-color: tomato;
+        }
+        .container02{
+            display: grid;
+            border: 1px solid black;
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+
+            grid-template-columns: 300fr 300fr 300fr;
+        }
+            
+        .cxs2{
+            background-color: tomato;
+            margin: 5px;
+        }
+    </style>    
+</head>
+<body>
+    <h1>display:grid;</h1>
+    <section class="grid">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+    <h1>-grid-template-colunmns: 200px 200px;</h1>
+    <section class="container">
+        <div class="cxs1">1</div>
+        <div class="cxs1">2</div>
+        <div class="cxs1">3</div>
+        <div class="cxs1">4</div>
+    </section>
+    <h1>grid-template-columns: 1fr 2fr 1fr</h1>
+    <section class="container02">
+        <div class="cxs2">1</div>
+        <div class="cxs2">2</div>
+        <div class="cxs2">3</div>
+        <div class="cxs2">4</div>
+        <div class="cxs2">5</div>
+        <div class="cxs2">6</div>
+    </section>
+</body>
+</html>

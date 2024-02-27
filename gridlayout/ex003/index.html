@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            display: grid;
+            max-width: 400px;
+            margin: auto;
+            border: 1px solid black;
+
+            grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
+        }
+        .cxs01{
+            text-align: center;
+            background-color: tomato;
+            margin: 5px;
+
+        }
+        .container02{
+            display: grid;
+            max-width: 400px;
+            border: 1px solid black;
+            margin: auto;
+
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .cxs02{
+            background-color: tomato;
+            margin: 5px;
+            text-align: center;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>grid-template-columns: minmax(200px, 1fr) 1fr 1fr;</h1>
+    <section class="container">
+        <div class="cxs01">1</div>
+        <div class="cxs01">2</div>
+        <div class="cxs01">3</div>
+        <div class="cxs01">4</div>
+        <div class="cxs01">5</div>
+        <div class="cxs01">6</div>
+    </section>
+    <h1>grid-template-columns: repeat(4, fr);</h1>
+    <section class="container02">
+        <div class="cxs02">1</div>
+        <div class="cxs02">2</div>
+        <div class="cxs02">3</div>
+        <div class="cxs02">4</div>
+    </section>
+ </body>
+ </html>

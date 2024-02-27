@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container01{
+            display: grid;
+            max-width: 400px;
+            border: 1px solid black;
+            margin: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .cxs01,  .subgrid{
+            background-color: tomato;
+            margin: 5px;
+            text-align: center;
+        }
+        .subgrid{
+           
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 5px;
+        }
+        .subgrid > div {
+           background-color: rgb(160, 60, 42);
+        }
+        .container02{
+            display: grid;
+            margin: auto;
+            max-width: 400px;
+            border: 1px solid black;
+
+            grid-template-columns: 100px 100px 100px 100px;
+        }
+        .cxs02{
+            text-align: center;
+            background-color: tomato;
+            margin: 5px;
+        }
+        .container03{
+            display: grid;
+            border: 1px solid black;
+            max-width: 400px;
+            margin: auto;
+
+            grid-template-columns: 1fr 2fr;
+        }
+        .cxs03{
+            text-align: center;
+            background-color: tomato;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>subgrid</h1>
+    <section class="container01">
+        <div class="cxs01">1</div>
+        <div class="cxs01">2</div>
+        <div class="cxs01">3</div>
+        <div class="cxs01">4</div>
+        <div class="cxs01 subgrid">
+            <div>5.1</div>
+            <div>5.2</div>
+            <div>5.3</div>
+            <div>5.4</div>
+        </div>
+        <div class="cxs01">6</div>
+    </section>
+    <h1>grid-template-columns:100px 100px 100px 100px</h1>
+    <section class="container02">
+        <div class="cxs02">essequebrouuu</div>
+        <div class="cxs02">esse nao quebrou</div>
+        <div class="cxs02">3</div>
+        <div class="cxs02">4</div>
+    </section>
+    <h1>grid-template-colummns:1fr 2fr</h1>
+    <section class="container03">
+        <div class="cxs03">esseconteudonaoquebrou</div>
+        <div class="cxs03">2</div>
+        <div class="cxs03">3</div>
+        <div class="cxs03">4</div>
+    </section>
+</body>
+</html>
