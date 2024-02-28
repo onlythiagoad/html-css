@@ -28,9 +28,37 @@
             border: 1px solid black;
             margin: auto;
 
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(2, 1fr) 1fr 200px;
         }
         .cxs02{
+            background-color: tomato;
+            margin: 5px;
+            text-align: center;
+        }
+        .container03{
+            max-width: 400px;
+            margin: auto;
+            border: 1px solid black;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 100px);
+          
+        }
+        .cxs03{
+            background-color: tomato;
+            margin: 5px;
+            text-align: center;
+
+        }
+        .container04{
+            max-width: 400px;
+            border: 1px solid black;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px,auto));
+        }
+        .cxs04{
             background-color: tomato;
             margin: 5px;
             text-align: center;
@@ -53,6 +81,25 @@
         <div class="cxs02">2</div>
         <div class="cxs02">3</div>
         <div class="cxs02">4</div>
+    </section>
+    <h1>grid-template-columns: repeat(auto-fit, 100px);</h1>
+    <section class="container03">
+        <div class="cxs03">1</div>
+        <div class="cxs03">2</div>
+        <div class="cxs03">3</div>
+        <div class="cxs03">4</div>
+        <div class="cxs03">5</div>
+        <div class="cxs03">6</div>
+    </section>
+    <h1>grid-template-columns: repeat(auto-fit, minmax(100px,auto));</h1>
+    <section class="container04">
+        <div class="cxs04">1</div>
+        <div class="cxs04">2</div>
+        <div class="cxs04">3</div>
+        <div class="cxs04">4</div>
+        <div class="cxs04">5</div>
+        <div class="cxs04">6</div>
+        
     </section>
  </body>
  </html>

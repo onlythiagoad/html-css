@@ -1,0 +1,35 @@
+@charset "UTF-8";
+h1{
+    text-align: center;
+}
+.container{
+    max-width: 400px;
+    border: 1px solid black;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px,auto));
+}
+
+.cxs{
+    text-align: center;
+    margin: 5px;
+    background-color: tomato;
+}
+
+.container02{
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 200px 50px;
+   
+}
+
+.cxs02{
+    background-color: tomato;
+    margin: 5px;
+    text-align: center;
+}
