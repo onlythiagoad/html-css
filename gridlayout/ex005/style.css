@@ -37,7 +37,7 @@ h1{
     background-color: tomato;
     margin: 5px;
 }
-@media screen and (min-width: 600px) and (max-width:800px){
+@media (max-width:500px){
     .container{
         max-width: 400px;
         border: 1px solid black;
@@ -46,8 +46,8 @@ h1{
         display: grid;
         grid-template-areas: 
         "nav nav logo"
-        "content content content"
-        "sidenav footer footer" ;
+        "sidenav content content"
+        "sidenav footer advert" ;
     }
     .logo{
       grid-area: logo;
