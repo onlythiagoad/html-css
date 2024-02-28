@@ -37,7 +37,8 @@ h1{
     background-color: tomato;
     margin: 5px;
 }
-@media (max-width:500px){
+/*
+@media screen and (min-width: 474px) and (max-width: 992px){
     .container{
         max-width: 400px;
         border: 1px solid black;
@@ -46,7 +47,7 @@ h1{
         display: grid;
         grid-template-areas: 
         "nav nav logo"
-        "sidenav content content"
+        "content content content"
         "sidenav footer advert" ;
     }
     .logo{
@@ -57,7 +58,7 @@ h1{
     }
     .content{
         grid-area: content;
-    }
+    }                       ------ FAZER UNS TESTES ------
     .sidenav{
         grid-area: sidenav;
     }
@@ -72,4 +73,34 @@ h1{
         background-color: tomato;
         margin: 5px;
     }
+}
+*/
+
+.container02{
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid black;
+
+    display: grid;
+    grid-template-areas: 
+    "logo logo"
+    "content content"
+    "sidenav advert"
+    "footer footer";
+}
+.logo2{
+    grid-area: logo;
+}
+.content2{
+    grid-area: content;
+}
+.footer2{
+    grid-area: footer;
+}
+
+
+.itens02{
+    background-color: tomato;
+    margin: 5px;
+    text-align: center;
 }
