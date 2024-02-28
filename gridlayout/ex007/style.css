@@ -1,0 +1,44 @@
+@charset "UTF-8";
+h1{
+    text-align: center;
+}
+.container{
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid black;
+    display: grid;
+
+    /*gap: 5px 10px;*/
+    /*column-gap: 10vw;*/
+    row-gap: 20px;
+
+    grid-template: 
+    "logo nav nav" 50px
+    "sidenav content advert" 150px
+    "sidenav footer footer" 100px /
+    100px 1fr 50px;
+    
+}
+.logo{
+    grid-area: logo;
+}
+.content{
+    grid-area: content;
+}
+.advert{
+    grid-area: advert;
+}
+.nav{
+    grid-area: nav;
+}
+.sidenav{
+    grid-area: sidenav;
+}
+.footer{
+    grid-area: footer;
+}
+.item{
+    background-color: tomato;
+    text-align: center;
+    
+}

@@ -34,6 +34,7 @@ h1{
     margin: 5px;
     text-align: center;
 }
+/*--------------------------------------*/
 .container2{
     max-width: 400px;
     margin: auto;
@@ -64,6 +65,51 @@ h1{
     grid-area: footer;
 }
 .item2{
+    background-color: tomato;
+    margin: 5px;
+    text-align: center;
+}
+/*--------------------------------------*/
+.container3{
+    max-width: 400px; 
+    margin: auto; 
+    border: 1px solid black;
+
+    display: grid;
+    grid-template: 50px 1fr / repeat(1, 1fr) 100px 50px;
+}
+
+.item3{
+    background-color: tomato;
+    margin: 5px;
+    text-align: center;
+}
+/*--------------------------------------*/
+.container4{
+    max-width: 400px; 
+    margin: auto; 
+    border: 1px solid black;
+
+    display: grid;
+    grid-template: 
+    "logo nav nav" 50px
+    "sidenav content advert" 150px /*LINHAS*/
+    "sidenav footer footer" 100px /
+    100px 1fr 50px; /*COLUNAS*/
+}
+.logo4{
+    grid-area: logo;
+}
+.nav4{
+    grid-area: nav;
+}
+.sidenav4{
+    grid-area: sidenav;
+}
+.footer4{
+    grid-area: footer;
+}
+.item4{
     background-color: tomato;
     margin: 5px;
     text-align: center;
