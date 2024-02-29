@@ -1,0 +1,60 @@
+h1,p{
+    text-align: center;
+}
+.container{
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid black;
+
+    display: grid;
+    gap: 5px;
+    grid-auto-flow: column;
+}
+.item{
+    background-color: tomato;
+    text-align: center;
+}
+/*===============================================*/
+.recipiente{
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid black;
+
+    display: grid;
+    gap: 5px;
+
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    grid-template-rows: 50px 50px; /*QUEBROU A COLUNA POR CAUSA QUE DEFINI LINHA*/
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    
+
+
+}
+
+.item2{
+    background-color: tomato;
+    text-align: center;
+}
+/*===============================================*/
+.recip2{
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid black;
+
+    display: grid;
+    gap: 5px;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: dense;
+}
+.item-2{
+    grid-column: span 3;
+}
+.item-4{
+    grid-column: span 3;
+}
+.item3{
+    background-color: tomato;
+    text-align: center;
+}

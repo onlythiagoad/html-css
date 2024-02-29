@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+h1{
+    text-align: center;
+}
+.container{
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid black;
+
+    display: grid;
+    gap: 5px;
+
+    grid: 100px 50px/1fr 1fr;
+}
+.item{
+    text-align: center;
+    background-color: tomato;
+}
+/*=================================================*/
+
+.recipiente{
+    max-width: 400px;
+    margin: auto; 
+    border:1px solid black;
+    gap: 5px;
+    grid: 100px 100px / auto-flow 100px 100px;
+     /*grid-auto-columns: 100px 50px;
+    grid-auto-rows: 100px; ----É O MESMO QUE ESSES 3 COMANDOS----
+    grid-auto-flow: column;*/
+    
+}
+.item2{
+    text-align: center;
+    background-color: tomato;
+}
+/*=================================================*/
+
+.recip2{
+    max-width: 400px;
+    border:1px solid black;
+    margin: auto; 
+
+    display: grid;
+    gap: 5px;
+
+    grid: 
+    "logo nav nav" 50px
+    "sidenav content advert" 150px
+    "sidenav footer footer" 100px
+    / 100px 1fr 50px;
+}
+.nav{
+    grid-area: nav;
+}
+.sidenav{
+    grid-area: sidenav;
+}
+.footer{
+    grid-area: footer;
+}
+.item3{
+    text-align: center;
+    background-color: tomato;
+}
