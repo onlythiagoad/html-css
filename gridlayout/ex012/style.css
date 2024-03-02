@@ -1,0 +1,50 @@
+@charset "UTF-8";
+h1{
+    text-align: center;
+}
+.container{
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid black;
+    display: grid;
+    gap: 5px;
+
+    grid-template-columns: [inicio] 1fr [meio] 1fr [final];
+    grid-auto-rows: 50px;
+}
+.item{
+    background-color: tomato;
+    text-align: center;
+}
+.item-03{
+    /*grid-column: inicio / final;*/
+    grid-column-start: inicio;
+    grid-column-end: final;
+}
+/*=====================================================*/
+.recipiente{
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid black;
+    display: grid;
+    gap: 5px;
+
+    grid-template-areas: 
+    "header header header"
+    "sidenav content ads"
+    "sidenav footer footer";
+    grid-auto-rows: 50px;
+}
+.item2{
+    background-color: tomato;
+    text-align: center;
+}
+.item-1{
+    grid-column: header / header;
+}
+.item-2{
+    grid-area: sidenav;
+}
+.item-6 {
+    grid-area: footer;
+}
