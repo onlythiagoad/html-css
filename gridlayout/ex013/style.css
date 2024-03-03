@@ -1,0 +1,72 @@
+@charset "UTF-8";
+h1{
+    text-align: center;
+}
+.container{
+    max-width: 400px;
+    /*height: 400px;*/
+    margin: auto;
+    border: 1px solid black;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
+}
+.item{
+    background-color: tomato;
+    text-align: center;
+}
+.item-1{
+    grid-row: 4;
+    grid-column: 2;
+}
+/*========================================================*/
+.recipiente{
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid black;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
+}
+.cxs{
+    text-align: center;
+    background-color: tomato;
+}
+.cx2{
+    grid-row: span 2;
+}
+.cx4{
+    grid-row: span 2;
+}
+.cx5{
+    grid-row: span 2;
+}
+/*========================================================*/
+.recip2{
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid black;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
+}
+.boxs{
+    text-align: center;
+    background-color: tomato;
+}
+.box2{
+    grid-row: span 1;
+   /*grid-row-start: 1;
+    grid-row-end: 3;*/
+}
+.box4{
+   
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.box6{
+   grid-row: span 2;
+}
