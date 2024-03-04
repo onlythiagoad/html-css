@@ -1,0 +1,38 @@
+@charset "UTF-8";
+h1{
+    text-align: center;
+}
+.container{
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid black;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: [row1] 50px [row2] 50px [row3];
+
+}
+.item{
+    background-color: tomato;
+    text-align: center;
+}
+.item1{
+    grid-row-start: row1;
+    grid-row-end: row3;
+}
+/*================================================*/
+.recipiente{
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid black;
+    display: grid;
+    gap: 5px;
+    grid-auto-rows: 50px;
+    grid-template-areas: 
+    "header header header"
+    "sidenav content ads"
+    "sidenav footer footer";
+}
+.cx2{
+    grid-row: sidenav / sidenav;
+}
