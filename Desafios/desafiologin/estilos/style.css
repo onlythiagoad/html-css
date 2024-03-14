@@ -1,0 +1,32 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: #393A46;
+}
+main{
+    display: grid;
+    width: 800px;
+    background: #212233;
+}
+.login h1 {
+    padding: 10px;
+}
+.imagem{
+    background-image: url(../midia/cartoon.jpg);
+    
+}
+#ilogin{
+   background-color: lightcoral;
+   height: 25px;
+   border-radius: 10px;
+            
+}
+#isenha{
+    background-color: lightcoral;
+    height: 25px;
+    border-radius: 10px;
+}
