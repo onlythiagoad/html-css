@@ -13,16 +13,23 @@
           
         </div>
         <div class="login">
-            <h1>Faça seu login</h1>
+            <h1>Log in</h1>
             <form action="post" autocomplete="on" id="email">
-                <label for="ilogin">Email:</label>
-                <input type="text" name="clogin" id="ilogin" required minlength="15" autocomplete="email">
-            </form>
 
-            <form action="post" autocomplete="one" id="password">
-                <label for="isenha">Password:</label>
-                <input type="password" name="senha" id="isenha" required minlength="10" max="10" autocomplete="current-password">
-            </form>
+                <div class="email">
+                    <label for="ilogin">Email:</label>
+                    <input type="text" name="clogin" id="ilogin" required minlength="15" autocomplete="email">
+                </div>
+
+                <div class="senha">
+                    <label for="isenha">Password:</label>
+                    <input type="password" name="senha" id="isenha">
+                </div>
+                <input type="submit" value="Login" class="bt-entrar">
+                <span id="remember">Remember-me</span>
+               
+              
+           </form>
            
             
         </div>
