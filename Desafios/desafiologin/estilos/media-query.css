@@ -2,6 +2,7 @@
 @media screen and (max-width: 662px){
     body{
         display: grid;
+        background-color: #161622;
     }
     main{
         display: grid;
@@ -17,6 +18,68 @@
     .imagem{
         background-size: cover;
         border-radius: 20px 20px 0px 0px;
+       
+    }
+    
+}
+
+@media screen and (min-width:662px) and (max-width:800px){
+    body{
+        display: grid;
+        background-color: #161622;
+        justify-content: center;
+        align-content: center;
+    }
+    .login{
+        margin: auto;
+    }
+    .imagem{
+        height: 230px;
+        width: 600px;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        border-radius: 20px 20px 0px 0px;
+
+    }
+    main{
+        display: grid;
+        width: 600px;
+        height: 600px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.414);
+        color: white;
+        align-content: start;
+        
+       
+    }
+   #remember{
+    text-align: center;
+
+   }
+}
+@media screen and (min-width: 800px){
+    body{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        background-color: #161622;
+
+    }
+
+    main{
+        height: 500px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 20px;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.414);
+    }
+    .imagem{
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px 0px 0px 20px;
+    }
+    .login{
+     justify-self: center;
     }
     
 }

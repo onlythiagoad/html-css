@@ -10,15 +10,19 @@
 body{
     font-family: var(--font-padrao);
     height: 100vh;
-    background-color: #393A46;
+    background-color: black;
 }
 main{
     display: grid;
     width: 800px;
     background: #212233;
+    color: white;
+    transition: width .3s, height .3s;
+   transition-timing-function: ease;
 }
 .login h1 {
     padding: 10px;
+    text-align: center;
 }
 .imagem{
     background-image: url(../midia/cartoon.jpg);
@@ -59,6 +63,7 @@ main{
 }
 #remember{
     display: block;
+    text-align: center;
     background-color:  #505162;
     width: 200px;
     margin: auto;
