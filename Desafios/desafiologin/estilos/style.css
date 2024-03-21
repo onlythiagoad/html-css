@@ -31,6 +31,7 @@ main{
 .senha, .email{
     padding: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.111);
+    /* border-top-style: double; */
     border-bottom: 1px solid rgba(255, 255, 255, 0.111);
 }
 #ilogin{
